@@ -1,0 +1,4 @@
+﻿Timestamp	Filename	Error	Message
+2020-06-19 12:36:26.731 -0400	AceEditor.fmp12	0	*** Started consistency check of improperly closed file, total of 67 block(s) to check
+2020-06-19 12:36:26.732 -0400	AceEditor.fmp12	0	Reset maximum block sequence number to 67745
+2020-06-19 12:36:26.732 -0400	AceEditor.fmp12	0	*** Completed consistency check, checked 67 block(s)

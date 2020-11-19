@@ -7,12 +7,12 @@ export default function Control(props) {
     const display = props.hidden ? "none" : "";
 
     const valObj = {
-      validate: value => {
+      validate: (value) => {
         if (!value) return;
         if (!props.options) return;
         if (props.options.indexOf(value) >= 0) return;
         return "Please select from the available options";
-      }
+      },
     };
     if (props.required) {
       valObj.required = "This option is required.";
@@ -24,9 +24,13 @@ export default function Control(props) {
     }
 
     return (
-      <FormGroup style={{ display }}>
-        <span className="schema float-right">{props.rightLabel}</span>
-        <Label for={props.name}>{props.label}</Label>
+      <FormGroup
+        style={{
+          display,
+        }}
+      >
+        <span className="schema float-right"> {props.rightLabel} </span>{" "}
+        <Label for={props.name}> {props.label} </Label>{" "}
         <Input
           invalid={error ? true : false}
           onChange={props.onChange}
@@ -37,17 +41,112 @@ export default function Control(props) {
           id={props.name}
           disabled={props.disabled}
         >
-          <option value="">select...</option>
-          {opts.map(o => {
+          <option value=""> select... </option>{" "}
+          {opts.map((o) => {
             return (
               <option value={o} key={o}>
-                {o}
+                {" "}
+                {o}{" "}
               </option>
             );
-          })}
-        </Input>
-        <FormText>{props.help}</FormText>
-        <FormFeedback invalid>{error}</FormFeedback>
+          })}{" "}
+        </Input>{" "}
+        <FormText> {props.help} </FormText>{" "}
+        <FormFeedback invalid> {error} </FormFeedback>{" "}
+      </FormGroup>
+    );
+  } else if (props.type === "text") {
+    const display = props.hidden ? "none" : "";
+    // alert("Text");
+    const valObj = {
+      validate: (value) => {
+        if (!value) return;
+        if (!props.options) return;
+        if (props.options.indexOf(value) >= 0) return;
+        return "Please select from the available options";
+      },
+    };
+    if (props.required) {
+      valObj.required = "This option is required.";
+    }
+
+    let error = props.errors ? props.errors[props.name] : null;
+    if (error && error.message) {
+      error = error.message;
+    }
+
+    return (
+      <FormGroup
+        style={{
+          display,
+        }}
+      >
+        <span className="schema float-right"> {props.rightLabel} </span>{" "}
+        <Label for={props.name}> {props.label} </Label>{" "}
+        <Input
+          invalid={error ? true : false}
+          onChange={props.onChange}
+          innerRef={props.register(valObj)}
+          bsSize="sm"
+          type="text"
+          name={props.name}
+          id={props.name}
+          disabled={props.disabled}
+        >
+          {/* <option value="">select...</option>
+                          {opts.map(o => {
+                            return (
+                              <option value={o} key={o}>
+                                {o}
+                              </option>
+                            ); */}
+          }) }{" "}
+        </Input>{" "}
+        <FormText> {props.help} </FormText>{" "}
+        <FormFeedback invalid> {error} </FormFeedback>{" "}
+      </FormGroup>
+    );
+  } else if (props.type === "number") {
+    const display = props.hidden ? "none" : "";
+
+    const valObj = {
+      validate: (value) => {
+        if (!value) return;
+        if (!props.options) return;
+        if (props.options.indexOf(value) >= 0) return;
+        return "Please select from the available options";
+      },
+    };
+    if (props.required) {
+      valObj.required = "This option is required.";
+    }
+
+    let error = props.errors ? props.errors[props.name] : null;
+    if (error && error.message) {
+      error = error.message;
+    }
+    return (
+      <FormGroup
+        style={{
+          display,
+        }}
+      >
+        <span className="schema float-right"> {props.rightLabel} </span>{" "}
+        <Label for={props.name}> {props.label} </Label>{" "}
+        <Input
+          invalid={error ? true : false}
+          onChange={props.onChange}
+          innerRef={props.register(valObj)}
+          bsSize="sm"
+          type="number"
+          name={props.name}
+          id={props.name}
+          disabled={props.disabled}
+        >
+          ); }) }{" "}
+        </Input>{" "}
+        <FormText> {props.help} </FormText>{" "}
+        {/* <FormFeedback invalid>{error}</FormFeedback> */}{" "}
       </FormGroup>
     );
   } else {
@@ -57,8 +156,12 @@ export default function Control(props) {
     }
     return (
       <FormGroup check>
-        <div style={{ height: "10px" }} />
-        <div className="checkbox-label">Read only</div>
+        <div
+          style={{
+            height: "10px",
+          }}
+        />{" "}
+        <div className="checkbox-label"> </div>{" "}
         <Label check>
           <Input
             invalid={error ? true : false}
@@ -68,10 +171,10 @@ export default function Control(props) {
             name={props.name}
             id={props.name}
           />{" "}
-          <FormText>{props.label}</FormText>
-        </Label>
-        <FormText>{props.help}</FormText>
-        <FormFeedback invalid>{error}</FormFeedback>
+          <FormText> {props.label} </FormText>{" "}
+        </Label>{" "}
+        <FormText> {props.help} </FormText>{" "}
+        <FormFeedback invalid> {error} </FormFeedback>{" "}
       </FormGroup>
     );
   }

@@ -1,0 +1,608 @@
+[{
+        "Data": {
+            "Id": "28EC96A8-C4FD-429D-A68F-9CC7EF59E5C0"
+        },
+        "Level": "script",
+        "Message": "Post Other Intake Form { json }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655065718
+        },
+        "TransactionCounter": 1
+    },
+    {
+        "Data": {
+            "Id": "28EC96A8-C4FD-429D-A68F-9CC7EF59E5C0"
+        },
+        "Level": "info",
+        "Message": "Calling _Post Intake Form",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Post Other Intake Form { json }",
+            "UTC": 63726655065802
+        },
+        "TransactionCounter": 1
+    },
+    {
+        "Data": {
+            "Id": "28EC96A8-C4FD-429D-A68F-9CC7EF59E5C0"
+        },
+        "Level": "script",
+        "Message": "_Post Intake Form",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655065805
+        },
+        "TransactionCounter": 2
+    },
+    {
+        "Data": {
+            "Address": [{
+                "City": "San Diego",
+                "State": "CA",
+                "Street_PO": "1855 1st Ave",
+                "Type": "Home",
+                "Zip": "92101-2685"
+            }],
+            "Date_of_Birth": "3/18/2020",
+            "EmergencyContactAddress": "",
+            "EmergencyContactEmailAddress": "",
+            "EmergencyContactName": "",
+            "EmergencyContactPhone": "",
+            "First_Name": "testy",
+            "Gender": "Female",
+            "Id": "1 4KD1N JDA1Z E3LAS ISTDI",
+            "InternetAddress": [{
+                "Address": "",
+                "Primary": 1,
+                "Type": "Home"
+            }],
+            "Interpreter": 0,
+            "Language": "Portuguese",
+            "Last_Name": "mctestington",
+            "Marital_Status": "",
+            "Middle_Name": "Mack",
+            "Nickname": "",
+            "Organization_Ind": 0,
+            "PassportNumber": "",
+            "Phone": [{
+                    "Number": "1112223333",
+                    "Type": "Home"
+                },
+                {
+                    "Extension": "",
+                    "Number": "(619) 222-3333",
+                    "Type": "Work"
+                }
+            ],
+            "Prefix": "Mr.",
+            "Referred_by_Contact_ID": "",
+            "Referred_by_Contact_Name": "",
+            "Social_Security_Number": "555-55-5555",
+            "Source": "",
+            "Suffix": "",
+            "Title": ""
+        },
+        "Level": "script",
+        "Message": "Create or Patch Client { data }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655066341
+        },
+        "TransactionCounter": 3
+    },
+    {
+        "Data": {
+            "Date_of_Birth": "3/18/2020",
+            "First_Name": "testy",
+            "Gender": "Female",
+            "Id": "1 4KD1N JDA1Z E3LAS ISTDI",
+            "InternetAddress": [{
+                "Address": "",
+                "Primary": 1,
+                "Type": "Home"
+            }],
+            "Interpreter": 0,
+            "Language": "Portuguese",
+            "Last_Name": "mctestington",
+            "Middle_Name": "Mack",
+            "PassportNumber": "",
+            "Phone": [{
+                    "Number": "1112223333",
+                    "Type": "Home"
+                },
+                {
+                    "Extension": "",
+                    "Number": "(619) 222-3333",
+                    "Type": "Work"
+                }
+            ],
+            "Prefix": "Mr.",
+            "Social_Security_Number": "555-55-5555",
+            "Source": ""
+        },
+        "Level": "script",
+        "Message": "_Patch Contact { json }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655066808
+        },
+        "TransactionCounter": 4
+    },
+    {
+        "Data": {
+            "Case_ID": "F796E52C-5762-45EF-9217-8851E69B6C37",
+            "Case_Relationship_Role_ID": "1 5HRR5 DNGSI EXQR9 0XMAV",
+            "Contact_ID": "1 4KD1N JDA1Z E3LAS ISTDI"
+        },
+        "Level": "script",
+        "Message": "Create CaseRelationship V2 { json }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655066934
+        },
+        "TransactionCounter": 3
+    },
+    {
+        "Data": {
+            "Accident_Report": "",
+            "Accident_WorkingTimeOf": "",
+            "Address_ID": "",
+            "Affect_on_Life": "",
+            "Client_ID": "1 4KD1N JDA1Z E3LAS ISTDI",
+            "Client_Was": "",
+            "Coming_From": "",
+            "Date_of_Death": "",
+            "Date_of_Loss": "11/8/2019",
+            "Date_of_Loss_Not_Applicable_Ind": 0,
+            "Date_of_Loss_Verified_By": "",
+            "Description_Brief": "",
+            "Description_Defendant_Driver_Insurance_Co": "",
+            "Description_Plaintiff_Driver": "",
+            "Drivers_License_Number": "",
+            "Going_To": "",
+            "Injury_Description": "injuries",
+            "Liability_Established": "",
+            "Location": "",
+            "Out_of_Pocket_Medical_Expenses": 0,
+            "Police_Department_ID": "",
+            "Police_Department_Name": "",
+            "Police_Present": "No",
+            "Police_Report_Completed": "No",
+            "QB_AccountID": "",
+            "QB_JobID": "",
+            "Time_of_Incident": "5:00am",
+            "Treatment_Status": "",
+            "Weather": ""
+        },
+        "Level": "script",
+        "Message": "Create Incident { json }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655067559
+        },
+        "TransactionCounter": 3
+    },
+    {
+        "Data": "",
+        "Level": "info",
+        "Message": "no employment info entered; skipping",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "_Post Intake Form",
+            "UTC": 63726655068406
+        },
+        "TransactionCounter": 2
+    },
+    {
+        "Data": {
+            "Address": [{
+                "City": "",
+                "State": "",
+                "Street_PO": "",
+                "Zip": ""
+            }],
+            "Case_ID": "F796E52C-5762-45EF-9217-8851E69B6C37",
+            "First_Name": "Jacob",
+            "InternetAddress": [{
+                "Address": "",
+                "Contact_ID": "",
+                "Owner_Operator": "",
+                "Primary": 0,
+                "Type": ""
+            }],
+            "Last_Name": "McFeely",
+            "Phone": [{
+                "Number": "",
+                "Type": ""
+            }]
+        },
+        "Level": "script",
+        "Message": "Create Witness { json }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655068409
+        },
+        "TransactionCounter": 3
+    },
+    {
+        "Data": {
+            "Address": [{
+                "City": "",
+                "State": "",
+                "Street_PO": "",
+                "Zip": ""
+            }],
+            "Case_ID": "F796E52C-5762-45EF-9217-8851E69B6C37",
+            "First_Name": "Jacob",
+            "InternetAddress": [{
+                "Address": "",
+                "Contact_ID": "",
+                "Owner_Operator": "",
+                "Primary": 0,
+                "Type": ""
+            }],
+            "Last_Name": "McFeely",
+            "Phone": [{
+                "Number": "",
+                "Type": ""
+            }]
+        },
+        "Level": "script",
+        "Message": "_Create Contact { param }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655068815
+        },
+        "TransactionCounter": 4
+    },
+    {
+        "Data": {
+            "Contact_ID": "F84D0137-11E4-4898-B4C8-E0D163FA1F7F",
+            "Phone": [{
+                "Number": "",
+                "Type": ""
+            }]
+        },
+        "Level": "script",
+        "Message": "_Batch Create Phones { param }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655071090
+        },
+        "TransactionCounter": 5
+    },
+    {
+        "Data": {
+            "Contact_ID": "F84D0137-11E4-4898-B4C8-E0D163FA1F7F",
+            "Number": "",
+            "Type": ""
+        },
+        "Level": "script",
+        "Message": "Create Phone { param }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655071094
+        },
+        "TransactionCounter": 6
+    },
+    {
+        "Data": {
+            "Address": [{
+                "City": "",
+                "State": "",
+                "Street_PO": "",
+                "Zip": ""
+            }],
+            "Contact_ID": "F84D0137-11E4-4898-B4C8-E0D163FA1F7F"
+        },
+        "Level": "script",
+        "Message": "_Batch Create Addresses { param }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655071966
+        },
+        "TransactionCounter": 5
+    },
+    {
+        "Data": {
+            "City": "",
+            "Contact_ID": "F84D0137-11E4-4898-B4C8-E0D163FA1F7F",
+            "State": "",
+            "Street_PO": "",
+            "Zip": ""
+        },
+        "Level": "script",
+        "Message": "Create or Edit Address { param }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655071970
+        },
+        "TransactionCounter": 6
+    },
+    {
+        "Data": {
+            "Contact_ID": "F84D0137-11E4-4898-B4C8-E0D163FA1F7F",
+            "InternetAddress": [{
+                "Address": "",
+                "Contact_ID": "",
+                "Owner_Operator": "",
+                "Primary": 0,
+                "Type": ""
+            }]
+        },
+        "Level": "script",
+        "Message": "_Batch Create Internet Addresses { param }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655072617
+        },
+        "TransactionCounter": 5
+    },
+    {
+        "Data": {
+            "Address": "",
+            "Contact_ID": "F84D0137-11E4-4898-B4C8-E0D163FA1F7F",
+            "Owner_Operator": "",
+            "Primary": 0,
+            "Type": ""
+        },
+        "Level": "script",
+        "Message": "Create Internet Address { param }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655072621
+        },
+        "TransactionCounter": 6
+    },
+    {
+        "Data": {
+            "Case_ID": "F796E52C-5762-45EF-9217-8851E69B6C37",
+            "Case_Relationship_Role_ID": "VOFCF GFYXE LYVOT YEAR7",
+            "Contact_ID": "F84D0137-11E4-4898-B4C8-E0D163FA1F7F"
+        },
+        "Level": "script",
+        "Message": "Create CaseRelationship V2 { json }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655072969
+        },
+        "TransactionCounter": 3
+    },
+    {
+        "Data": {
+            "Case_Type": "Other",
+            "Case_Type_Other": "",
+            "Caseload_Initial_Staff_ID": "1025F2EE-4FCB-431B-A278-9AF14E9347AA",
+            "ClaimAgainstPublicEntity": "",
+            "Client_ID": "1 4KD1N JDA1Z E3LAS ISTDI",
+            "Client_Name": "testy Mack mctestington",
+            "CurrentlyReceiving": "Medicare\rSSI/SSDI",
+            "DateOfLoss": "11/8/2019",
+            "FileLocation": {
+                "Case_ID": "F796E52C-5762-45EF-9217-8851E69B6C37",
+                "Current_Ind": true,
+                "Date_From": "6/1/2020",
+                "Date_Thru": "",
+                "File_Status_ID": 2,
+                "Skip_Case_Validation": true,
+                "User_ID": "9196F4D8-C717-423E-A740-6F0A1FEDDE9A",
+                "User_Name": "bcooney"
+            },
+            "ID": "F796E52C-5762-45EF-9217-8851E69B6C37",
+            "Incident_ID": "13A8F485-6C2C-47BD-A7B5-3B7B0052788C",
+            "Intake_Completed_By": "admin",
+            "Intake_Date": "3/19/2020",
+            "Interpreter": 0,
+            "Lost_Wages": 0,
+            "Marital_Status": "",
+            "MedicalPreExistingConditions": "",
+            "PriorClaims": "",
+            "PriorClaimsDates": "",
+            "PriorClaimsInjuredBodyParts": "",
+            "PriorClaimsOrLawsuits": "",
+            "PriorClaimsPriorAttorneyContactInfo": "",
+            "PriorClaimsPriorAttorneyName": "",
+            "PriorClaimsSettledDate": "",
+            "PriorClaimsSettledOrPending": "",
+            "PriorClaimsTypeOfCases": "",
+            "RoadDefect": "",
+            "SOL_Case_Type": ""
+        },
+        "Level": "script",
+        "Message": "Create Case { json }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655073601
+        },
+        "TransactionCounter": 3
+    },
+    {
+        "Data": {
+            "Case_ID": "F796E52C-5762-45EF-9217-8851E69B6C37",
+            "Current_Ind": 1,
+            "Date_From": "6/1/2020",
+            "Date_Thru": "",
+            "File_Status_ID": 2,
+            "Skip_Case_Validation": 1,
+            "User_ID": "9196F4D8-C717-423E-A740-6F0A1FEDDE9A",
+            "User_Name": "bcooney"
+        },
+        "Level": "script",
+        "Message": "Create or Patch File Location { json }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655074494
+        },
+        "TransactionCounter": 4
+    },
+    {
+        "Data": {
+            "Address": [{
+                "City": "",
+                "State": "",
+                "Street_PO": "",
+                "Zip": ""
+            }],
+            "CaseRelationship": {
+                "Case_ID": "F796E52C-5762-45EF-9217-8851E69B6C37",
+                "Case_Relationship_Role_ID": "VOFCF GFYXE LZCA1 PKFXR",
+                "Contact_ID": "",
+                "Defense_Attorney_ID": "",
+                "Represented_By": "",
+                "Vehicle_ID": ""
+            },
+            "Case_ID": "F796E52C-5762-45EF-9217-8851E69B6C37",
+            "Citation": "",
+            "Classification": "",
+            "Contact_ID": "",
+            "Date_Served": "",
+            "Drivers_License_Number": "",
+            "Drivers_License_State": "",
+            "First_Name": "",
+            "Last_Name": "",
+            "Notes": "",
+            "Phone": []
+        },
+        "Level": "script",
+        "Message": "Create Defendant { json }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655075851
+        },
+        "TransactionCounter": 2
+    },
+    {
+        "Data": {
+            "Address": [{
+                "City": "",
+                "State": "",
+                "Street_PO": "",
+                "Zip": ""
+            }],
+            "Case_ID": "F796E52C-5762-45EF-9217-8851E69B6C37",
+            "First_Name": "",
+            "Last_Name": "",
+            "Phone": []
+        },
+        "Level": "script",
+        "Message": "_Create Contact { param }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655076027
+        },
+        "TransactionCounter": 3
+    },
+    {
+        "Data": {
+            "Contact_ID": "8A405365-CA1B-4381-9ECA-3A0107E55CD5",
+            "Phone": []
+        },
+        "Level": "script",
+        "Message": "_Batch Create Phones { param }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655077837
+        },
+        "TransactionCounter": 4
+    },
+    {
+        "Data": {
+            "Address": [{
+                "City": "",
+                "State": "",
+                "Street_PO": "",
+                "Zip": ""
+            }],
+            "Contact_ID": "8A405365-CA1B-4381-9ECA-3A0107E55CD5"
+        },
+        "Level": "script",
+        "Message": "_Batch Create Addresses { param }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655077842
+        },
+        "TransactionCounter": 4
+    },
+    {
+        "Data": {
+            "City": "",
+            "Contact_ID": "8A405365-CA1B-4381-9ECA-3A0107E55CD5",
+            "State": "",
+            "Street_PO": "",
+            "Zip": ""
+        },
+        "Level": "script",
+        "Message": "Create or Edit Address { param }",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655077847
+        },
+        "TransactionCounter": 5
+    },
+    {
+        "Data": {
+            "Case_ID": "F796E52C-5762-45EF-9217-8851E69B6C37",
+            "Case_Relationship_Role_ID": "VOFCF GFYXE LZCA1 PKFXR",
+            "Contact_ID": "8A405365-CA1B-4381-9ECA-3A0107E55CD5",
+            "Defense_Attorney_ID": "",
+            "Represented_By": "",
+            "Vehicle_ID": ""
+        },
+        "Level": "script",
+        "Message": "Create CaseRelationship V1 { json } #DEPRECATED",
+        "Meta": {
+            "Account": "dgraham",
+            "File": "JSG_Controller_V2",
+            "Script": "Start Transaction ( TransactionPayload )",
+            "UTC": 63726655078305
+        },
+        "TransactionCounter": 3
+    }
+]

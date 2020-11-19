@@ -9,31 +9,64 @@
     "reScanOnChange": true,
     "required": true
   },
-  "PrimaryKeyField": {
-    "help": "The is the unique primary key of the the table you are using",
-    "label": "Primary Key",
-    "rightLabel": "Text or Number Field",
+  "CodeField": {
+
     "type": "select",
     "options": [""],
     "value": "",
     "required": true
   },
-  "NameField": {
-    "help": "The name you want to display in the link",
-    "label": "Person Name Field",
+  "CSSField": {
+
     "type": "select",
     "options": [""],
     "value": "",
-    "required": true,
-    "rightLabel": "Text Field"
+    "required": false
   },
+  "JSField": {
 
-  "ListStyle": {
-    "help": "The name you want to display in the link",
-    "label": "Style",
     "type": "select",
-    "options": ["blue", "green", "pink"],
+    "options": [""],
     "value": "",
     "required": false
-  }
+  },
+  "JSONField": {
+
+    "type": "select",
+    "options": [""],
+    "value": "",
+    "required": false
+  },
+  "Theme": {
+    "help": "Pick a theme",
+    "label": "Theme",
+    "type": "select",
+    "options": [""],
+    "value": "",
+    "required": false
+  },
+
+  "FontSize": {
+
+    "type": "text",
+    "value": "",
+    "required": false
+  },
+  "ShowGutter": {
+    "type": "checkbox",
+    "value": ""
+  },
+  "ReadOnly": {
+    "type": "checkbox",
+    "value": ""
+  },
+  "TabSize": {
+    "type": "text",
+    "value": ""
+  },
+   "LoadingMessage": {
+     "type": "text",
+     "value": ""
+   }
+
 }

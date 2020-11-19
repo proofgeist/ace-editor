@@ -11,15 +11,15 @@ you'll likely need one for each find you do.
  * performs a find on the sample data
  * @param {string} primaryKeyQuery
  */
-export const useFindRecords = primaryKeyQuery => {
+export const useFindRecords = (primaryKeyQuery) => {
   //async function for SWR
-  const fetcher = async primaryKeyQuery => {
+  const fetcher = async (primaryKeyQuery) => {
     const req = {
       layouts: "AddonSampleData",
-      query: [{ PrimaryKey: primaryKeyQuery }]
+      query: [{ PrimaryKey: primaryKeyQuery }],
     };
 
-    const result = await fmFetch("AddonNameFind", req);
+    const result = await fmFetch("AceEditorFind", req);
     if (result.messages[0].code !== "0") {
       throw new Error(
         `Error: ${result.messages[0].code}. ${result.messages[0].message}`

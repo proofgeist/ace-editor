@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Develop your Widget as regular react widget.
 - running `npm build:inline` will produce a compiled production windget as a single file. copy and paste the contents of that file into your solution to use as your production Source
 
-## FileMaker File AddonName.fmp12
+## FileMaker File AceEditor.fmp12
 
 This file contains all the FileMaker code you are likely to need to get started. You'll want to change it's name to
 The name of your Addon. You'll also want to names space all the, Layouts, Scripts, Custom Fuctions, ValueLists and Tables.

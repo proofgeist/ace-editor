@@ -8,25 +8,53 @@
         "label": "Display Layout",
         "rightLabel": "Layout"
       },
-      "PrimaryKeyField": {
-        "help": "The is the unique primary key of the the table you are using",
-        "label": "Primary Key",
-        "rightLabel": "Text or Number Field"
+      "CodeField": {
+        "help": "The field from which the Code (or HTML) comes.",
+        "label": "Code field",
+        "rightLabel": "Text Field"
       },
-      "NameField": {
-        "help": "The name you want to display in the link",
-        "label": "Person Name Field",
+      "JSONField": {
+        "help": "The field from which the JSON comes.",
+        "label": "JSON field",
+        "rightLabel": "Text Field"
+      },
+      "CSSField": {
+        "help": "The field from which the CSS comes.",
+        "label": "CSS field",
+        "rightLabel": "Text Field"
+      },
+      "JSField": {
+        "help": "The field from which the JavaScript comes.",
+        "label": "JavaScript field",
         "rightLabel": "Text Field"
       }
     }
   },
-  "OtherMenu": {
-    "MenuLabel": "Other Settings",
-    "PageTitle": "Other Settings",
+  "SettingsMenu": {
+    "MenuLabel": "Settings",
+    "PageTitle": "Settings",
     "Fields": {
-      "ListStyle": {
-        "help": "The color of something",
-        "label": "Color Style"
+      "Theme": {
+        "help": "Pick a theme",
+        "label": "Theme"
+      },
+      "FontSize": {
+        "help": "Choose a Font Size.",
+        "label": "Font Size Number"
+      },
+      "ShowGutter": {
+        "label": "Show Gutter?"
+      },
+      "ReadOnly": {
+        "label": "Read Only?"
+      },
+      "TabSize": {
+        "help": "Use a number to designate the tab size.",
+        "label": "Tab Size"
+      },
+      "LoadingMessage":{
+        "help": "To Display in the web viewer before code is loaded.",
+        "label": "Loading Message"
       }
     }
   }
